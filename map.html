@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--     Student Name: Vidyadhar Angadiyavar -->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  </head>
+  <body onload="initialize();">
+	<h2>Programming Assignment 2 Web Mashup: Display House Prices on a Map </h2>
+    <form>
+       <label>House address: <input type="text" id="address"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+	<input type="button" onclick="clear_form();" value="Clear"/>
+    </form><br>
+
+    <div id="new_map" style="width:600px;height:500px"></div><br>
+    <h3>Your Options</h3>
+    <div id="output">&nbsp;</div>
+
+    
+  </body>
+</html>
